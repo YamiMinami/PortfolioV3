@@ -1,6 +1,7 @@
-import { BrowserRouter, Route, Routes} from "react-router-dom";
-import {Developers} from "./Functions.tsx";
-import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Developers from "./pages/Developers";
 
 
 function App() {
@@ -8,12 +9,13 @@ function App() {
 
   return (
     <>
-      <BrowserRouter></BrowserRouter>
-      <Routes>
-        <Route path="/developers" element={<Developers />} />
-      </Routes>
-
-
+        <BrowserRouter>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/developers" element={<Developers />} />
+            </Routes>
+        </BrowserRouter>
     </>
   )
 }
