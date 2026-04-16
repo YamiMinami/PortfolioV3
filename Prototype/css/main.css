@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Work Sans", sans-serif;
+    display: grid;
+    grid-template-areas:
+        "Header Header Header"
+        "Main Main Main"
+        "Footer Footer Footer";
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 5% auto auto;
+}
+
+header {
+    grid-area: Header;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 1em 2em 1em 2em;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.navbar li {
+    margin: 0 30px;
+}
+
+.navbar a {
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+}
+
+main {
+    grid-area: Main;
+}
+
+.hero-container {
+    background: url("../assets/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2em;
+}
+
+.hero-article {
+    padding: 15em;
+    text-align: center;
+    color: white;
+}
+
+.intro-container {
+    display: flex;
+    font-family: "Work Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.developers-container {
+    font-family: "Work Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.connect-container {
+    font-family: "Work Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3em;
+}
+
+
+
+footer {
+    grid-area: Footer;
+}
