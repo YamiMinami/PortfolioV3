@@ -1,6 +1,6 @@
 export default function Intro() {
     return (
-        <section className="intro-container">
+        <section id="about" className="intro-container">
             <article>
                 <h4>craft</h4>
                 <h2>What sets them apart</h2>
