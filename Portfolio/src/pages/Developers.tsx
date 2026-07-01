@@ -1,18 +1,11 @@
-const devs = [
-    { id: 1, name: "Trong", age: "20" },
-    { id: 2, name: "Sam", age: "26" },
-];
-
 export default function Developers() {
     return (
-        <div>
-            <h1>Meet the Developers</h1>
-            {devs.map((dev) => (
-                <div key={dev.id}>
-                    <h2>{dev.name}</h2>
-                    <p>{dev.age}</p>
-                </div>
-            ))}
-        </div>
+        <section className="developers-container">
+            <article>
+                <h4>Team</h4>
+                <h2>Our Developers</h2>
+                <h3>What sets them apart</h3>
+            </article>
+        </section>
     );
 }
