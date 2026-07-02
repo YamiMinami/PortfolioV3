@@ -4,6 +4,7 @@ import Intro from "./components/Intro.tsx";
 import Developers from "./components/Developers.tsx";
 import Connect from "./components/Connect.tsx";
 import Footer from "../../components/shared/Footer/Footer.tsx";
+import "./Home.css"
 
 export default function Home() {
     return (
